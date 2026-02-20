@@ -1,0 +1,25 @@
+L298N Motor Driver Connections:
+┌─────────────────────────────────────────┐
+│                L298N                      │
+│                                           │
+│  IN1 ──────── D1 (GPIO5)  NodeMCU       │
+│  IN2 ──────── D2 (GPIO4)                │
+│  IN3 ──────── D3 (GPIO0)                │
+│  IN4 ──────── D4 (GPIO2)                │
+│  ENA ──────── D5 (GPIO14) PWM Speed     │
+│  ENB ──────── D6 (GPIO12) PWM Speed     │
+│                                           |
+│  OUT1,OUT2 ── Left Motor                 │
+│  OUT3,OUT4 ── Right Motor                │
+│                                           |
+│  12V ──────── Battery +                 │
+│  GND ──────── Battery - + NodeMCU GND  │
+│  5V  ──────── NodeMCU VIN              │
+└─────────────────────────────────────────┘
+
+⚠️ Important:
+- L298N 5V output → ESP32 VIN
+- Common GND between L298N and ESP32
+- Remove ENA/ENB jumpers for PWM speed control
+
+

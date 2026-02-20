@@ -1,0 +1,19 @@
+❌ Car not moving?
+   → Check L298N power (need 6-12V)
+   → Check common GND
+   → Verify pin connections
+   → Run motor test section
+
+❌ Can't connect to WiFi?
+   → Look for RC-Car-ESP8266 in WiFi list
+   → Wait 10 seconds after power on
+   → Check serial monitor output
+
+❌ Controls laggy?
+   → Move phone closer to car
+   → Reduce other WiFi interference
+   → Check battery level
+
+❌ Motors go wrong direction?
+   → Swap IN1↔IN2 or IN3↔IN4
+   → Or swap motor wire connections

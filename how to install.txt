@@ -1,0 +1,25 @@
+Step 1: Flash MicroPython to ESP32
+─────────────────────────────────────
+pip install esptool
+esptool.py --port COM3 erase_flash
+esptool.py --port COM3 write_flash 
+  -fm dio 0x00000 micropython.bin
+
+Step 2: Upload Code
+─────────────────────────────────────
+pip install adafruit-ampy
+ampy --port COM3 put main.py
+
+  OR use Thonny IDE (Easier!)
+  - Open Thonny
+  - Set interpreter to MicroPython ESP32
+  - Copy paste code
+  - Save as main.py to device
+
+Step 3: Power & Connect
+─────────────────────────────────────
+1. Power on NodeMCU
+2. Phone WiFi → RC-Car-ESP32
+3. Password  → 12345678
+4. Browser   → http://192.168.4.1
+5. DONE! 🎉
